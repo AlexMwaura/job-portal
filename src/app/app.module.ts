@@ -4,19 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
-import { NavbarComponent } from './pages/navbar/navbar.component';
-import { JobListComponent } from './pages/job-list.component';
+import { JobFilterModule } from './pages/job-filter/job-filter.module';
+import { JobListModule } from './pages/job-list/job-list.module';
+import { NavbarModule } from './pages/navbar/navbar.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    JobListComponent,
+    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    JobFilterModule,
+    JobListModule,
+    NavbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
