@@ -13,6 +13,7 @@ export class JobListComponent implements OnInit {
 
   ngOnInit(): void {
     this.http.get<any[]>('assets/jobs.json').subscribe(data => {
+      console.log("this is the jobs list",data)
       this.jobs = data;
     });
   }

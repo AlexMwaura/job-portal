@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
+import { HomeComponent } from './components/home.component';
 import { JobFilterModule } from '../job-filter/job-filter.module';
 import { JobListModule } from '../job-list/job-list.module';
 
