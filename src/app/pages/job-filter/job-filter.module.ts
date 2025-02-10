@@ -8,6 +8,7 @@ import { JobFilterComponent } from './job-filter.component';
   declarations: [JobFilterComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [JobFilterComponent]
 })
 export class JobFilterModule { }

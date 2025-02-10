@@ -8,6 +8,7 @@ import { JobListComponent } from './job-list.component';
   declarations: [JobListComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [JobListComponent]
 })
 export class JobListModule { }

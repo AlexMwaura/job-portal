@@ -1,0 +1,18 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  app-job-filter {
+    width: 250px;
+  }
+  
+  app-job-list {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
