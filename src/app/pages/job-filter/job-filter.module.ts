@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { JobFilterComponent } from './job-filter.component';
+import { JobFilterComponent } from './components/job-filter.component';
 
 
 
