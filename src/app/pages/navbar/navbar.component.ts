@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { JobSearchService } from '../job-filter/services/job-search.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,8 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavbarComponent {
   expandedItem: string | null = null;
+  searchInput: string = ''; // Store user input
+ constructor(private jobSearchService: JobSearchService) { }
 
   toggleExpand(item: string) {
     this.expandedItem = this.expandedItem === item ? null : item;
@@ -17,5 +20,8 @@ export class NavbarComponent {
     if (!(event.target as HTMLElement).closest('.navbar, .dropdown-content')) {
       this.expandedItem = null;
     }
+  }
+  onSearchChange() {
+    this.jobSearchService.updateSearchQuery(this.searchInput); // Send search input to service
   }
 }

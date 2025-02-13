@@ -1,8 +1,8 @@
 [
-    { "title": "Senior UI/UX Designer", "company": "Amazon", "salary": "$250/hr" },
-    { "title": "UX Designer", "company": "Twitter", "salary": "$120/hr" },
-    { "title": "Software Engineer", "company": "Tangazoletu", "salary": "$300/hr" },
-    { "title": "Solutions Architect", "company": "Loop", "salary": "$400/hr" },
-    { "title": "DevOps Engineer", "company": "Eclectics", "salary": "$300/hr" }
+    { "title": "Senior UI/UX Designer", "company": "Amazon", "salary": "$250/hr","experience": "8+ years","location": "USA" },
+    { "title": "UX Designer", "company": "Twitter", "salary": "$120/hr","experience": "5 years","location": "Timbuktu"  },
+    { "title": "Software Engineer", "company": "Tangazoletu", "salary": "$300/hr","experience": "7 years" ,"location": "Westlands" },
+    { "title": "Solutions Architect", "company": "Loop", "salary": "$400/hr","experience": "3+ years" ,"location": "Nairobi" },
+    { "title": "DevOps Engineer", "company": "Eclectics", "salary": "$20000/hr" ,"experience": "2 years","location": "Thika" }
 
   ]
