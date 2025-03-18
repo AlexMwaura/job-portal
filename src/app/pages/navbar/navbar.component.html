@@ -11,8 +11,8 @@
   <!-- Expandable Section -->
 <div *ngIf="expandedItem === 'findJob'" class="dropdown-content">
   <input type="text" [(ngModel)]="searchInput" (input)="onSearchChange()" placeholder="Job Title">
-  <input type="text" placeholder="Work Location">
-  <input type="number" placeholder="Experience (years)">
+  <input type="text" [(ngModel)]="locationInput" (input)="onLocationChange()" placeholder="Work Location">
+  <input type="number" placeholder="Experience (years)" (input)="onSalaryChange()">
   <input type="range" min="100" max="20000" [(ngModel)]="searchInput" (input)="onSearchChange()">
 </div>
 

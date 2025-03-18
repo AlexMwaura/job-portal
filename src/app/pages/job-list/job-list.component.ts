@@ -22,16 +22,21 @@ export class JobListComponent implements OnInit {
     });
         // Subscribe to search query changes
         this.jobSearchService.searchQuery$.subscribe(query => {
-          this.filterJobs(query);
+          this.filterJobs(query,null,null);
+        });
+        this.jobSearchService.locationQuery$.subscribe((location) => {
+          this.filterJobs(null, location, null);
+        });
+        this.jobSearchService.salaryQuery$.subscribe((salary) => {
+          this.filterJobs(null, null, salary);
         });
   }
-  filterJobs(query: string) {
-    if (!query) {
-      this.filteredJobs = this.jobs; // Reset if empty
-    } else {
-      this.filteredJobs = this.jobs.filter(job =>
-        job.title.toLowerCase().includes(query.toLowerCase())
-      );
-    }
+  filterJobs(searchQuery: string | null, location: string | null, salary: number | null) {
+    this.filteredJobs = this.jobs.filter((job) => {
+      const matchesSearch = searchQuery ? job.title.toLowerCase().includes(searchQuery.toLowerCase()) : true;
+      const matchesLocation = location ? job.location.toLowerCase().includes(location.toLowerCase()) : true;
+      const matchesSalary = salary ? parseInt(job.salary.replace(/\D/g, '')) <= salary : true;
+      return matchesSearch && matchesLocation && matchesSalary;
+    });
   }
 }
