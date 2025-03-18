@@ -1,0 +1,9 @@
+<div class="job-list">
+    <div *ngFor="let job of filteredJobs" class="job-card">
+      <h3>{{ job.title }}</h3>
+      <p>{{ job.company }}</p>
+      <p>{{ job.salary }}</p>
+      <p>{{ job.location }}</p>
+      <button>Details</button>
+    </div>
+  </div>
