@@ -1,9 +1,108 @@
 [
-    { "title": "Senior UI/UX Designer", "company": "Amazon", "salary": "$250/hr","experience": "8+ years","location": "USA" },
-    { "title": "UX Designer", "company": "Twitter", "salary": "$120/hr","experience": "5 years","location": "Timbuktu"  },
-    { "title": "Software Engineer", "company": "Tangazoletu", "salary": "$300/hr","experience": "7 years" ,"location": "Westlands" },
-    { "title": "Solutions Architect", "company": "Loop", "salary": "$400/hr","experience": "3+ years" ,"location": "Nairobi" },
-    { "title": "DevOps Engineer", "company": "Eclectics", "salary": "$20000/hr" ,"experience": "2 years","location": "Thika" }
-
-  ]
-  
+  {
+    "id": "1",
+    "title": "Senior UI/UX Designer",
+    "company": "Amazon",
+    "salary": "$250/hr",
+    "experience": "8+ years",
+    "location": "USA",
+    "description": "As a Senior UI/UX Designer, you will lead the creation of intuitive and visually compelling user interfaces, ensuring a seamless user experience.",
+    "responsibilities": [
+      "Conduct user research to understand user needs and pain points.",
+      "Create wireframes, prototypes, and high-fidelity designs.",
+      "Collaborate with product managers and developers to implement designs.",
+      "Ensure design consistency and accessibility across products.",
+      "Collect and analyze user feedback for design improvements."
+    ],
+    "requiredSkills": [
+      "Proven experience as a UI/UX Designer.",
+      "Proficiency in design tools (e.g., Figma, Sketch, Adobe XD).",
+      "Strong understanding of UX principles and usability testing.",
+      "Ability to work closely with cross-functional teams."
+    ]
+  },
+  {
+    "id": "2",
+    "title": "UX Designer",
+    "company": "Twitter",
+    "salary": "$120/hr",
+    "experience": "5 years",
+    "location": "Timbuktu",
+    "description": "As a UX Designer, you will design user-centric experiences that align with product goals and user needs.",
+    "responsibilities": [
+      "Conduct user research and usability testing.",
+      "Create user flows, wireframes, and prototypes.",
+      "Collaborate with cross-functional teams to optimize UX.",
+      "Ensure accessibility and responsiveness across devices."
+    ],
+    "requiredSkills": [
+      "Experience with user research and data-driven design.",
+      "Proficiency in UX tools (e.g., Figma, InVision).",
+      "Strong communication skills to present design ideas."
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Software Engineer",
+    "company": "Tangazoletu",
+    "salary": "$300/hr",
+    "experience": "7 years",
+    "location": "Westlands",
+    "description": "As a Software Engineer, you will design, develop, and maintain scalable software solutions while collaborating with cross-functional teams.",
+    "responsibilities": [
+      "Develop backend systems and APIs.",
+      "Implement frontend components and ensure responsive design.",
+      "Optimize application performance.",
+      "Troubleshoot and debug issues.",
+      "Participate in code reviews."
+    ],
+    "requiredSkills": [
+      "Proficiency in Java, Spring Boot, and Angular.",
+      "Experience with REST APIs and microservices.",
+      "Strong problem-solving skills.",
+      "Familiarity with cloud services (e.g., AWS)."
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Solutions Architect",
+    "company": "Loop",
+    "salary": "$400/hr",
+    "experience": "3+ years",
+    "location": "Nairobi",
+    "description": "As a Solutions Architect, you’ll design and implement scalable technology solutions while ensuring alignment with business objectives.",
+    "responsibilities": [
+      "Design and document architecture solutions.",
+      "Collaborate with developers and stakeholders.",
+      "Ensure scalability, performance, and security.",
+      "Evaluate and select appropriate technologies."
+    ],
+    "requiredSkills": [
+      "Proven experience in designing scalable systems.",
+      "Strong knowledge of cloud architecture (AWS/GCP).",
+      "Expertise in system integration and APIs.",
+      "Excellent communication skills."
+    ]
+  },
+  {
+    "id": "5",
+    "title": "DevOps Engineer",
+    "company": "Eclectics",
+    "salary": "$20000/hr",
+    "experience": "2 years",
+    "location": "Thika",
+    "description": "As a DevOps Engineer, you’ll bridge development and operations to improve deployment processes and ensure system reliability.",
+    "responsibilities": [
+      "Implement CI/CD pipelines.",
+      "Automate infrastructure and deployments.",
+      "Monitor system performance and troubleshoot issues.",
+      "Collaborate with developers to optimize workflows."
+    ],
+    "requiredSkills": [
+      "Experience with CI/CD tools (e.g., Jenkins, GitLab).",
+      "Strong knowledge of containerization (Docker, Kubernetes).",
+      "Familiarity with cloud services (AWS, GCP).",
+      "Problem-solving mindset and ability to work under pressure."
+    ]
+  }
+]

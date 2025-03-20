@@ -4,6 +4,6 @@
       <p>{{ job.company }}</p>
       <p>{{ job.salary }}</p>
       <p>{{ job.location }}</p>
-      <button>Details</button>
+      <button [routerLink]="['/job', job.id]">Details</button>
     </div>
   </div>
