@@ -1,0 +1,31 @@
+
+   <div class="job-details" *ngIf="job">
+    <h2 class="job-title">{{ job.title }}</h2>
+    
+    <div class="job-info">
+      <p><i class="fas fa-building"></i> <strong>Company:</strong> {{ job.company }}</p>
+      <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> {{ job.location }}</p>
+      <p><i class="fas fa-dollar-sign"></i> <strong>Salary:</strong> {{ job.salary }}</p>
+    </div>
+  
+    <div class="job-description">
+      <p><strong>Description:</strong> {{ job.description }}</p>
+    </div>
+  
+    <div class="section">
+      <h3>Key Responsibilities:</h3>
+      <ul>
+        <li *ngFor="let responsibility of job.responsibilities">{{ responsibility }}</li>
+      </ul>
+    </div>
+  
+    <div class="section">
+      <h3>Required Skills and Qualifications:</h3>
+      <ul>
+        <li *ngFor="let skill of job.requiredSkills">{{ skill }}</li>
+      </ul>
+    </div>
+  
+    <button (click)="goBack()">Apply</button>
+  </div>
+  
