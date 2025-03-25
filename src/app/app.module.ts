@@ -9,11 +9,13 @@ import { JobListModule } from './pages/job-list/job-list.module';
 import { NavbarModule } from './pages/navbar/navbar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { JobDetailsComponent } from './pages/job-details/components/job-details.component';
+import { JobApplicationComponent } from './pages/job-application/components/job-application/job-application.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JobDetailsComponent,
+    JobApplicationComponent,
     
 
   ],
