@@ -12,6 +12,7 @@ export class JobApplicationComponent {
   applicant = {
     name: '',
     email: '',
+    phoneNumber: '',
     resume: null
   };
   constructor(private route: ActivatedRoute, private http: HttpClient, private router: Router) {}
