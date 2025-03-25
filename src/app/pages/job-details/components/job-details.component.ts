@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-job-details',
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class JobDetailsComponent {
   job: any;
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+  constructor(private route: ActivatedRoute, private http: HttpClient,private router : Router) { }
 
   ngOnInit(): void {
     const jobId = this.route.snapshot.paramMap.get('id'); // Get job ID from URL
@@ -22,7 +22,7 @@ export class JobDetailsComponent {
       console.log("jobs details >>>",this.job)
     });
   }
-  goBack(){
-
+  applyForJob(): void {
+    this.router.navigate(['/apply', this.job.id]);
   }
 }
